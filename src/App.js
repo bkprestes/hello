@@ -17,9 +17,7 @@ class MyLabel extends Component{
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <MyLabel/>
-      </div>
+      <p>Teste</p>
     );
   }
 }
