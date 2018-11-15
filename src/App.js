@@ -17,7 +17,7 @@ class MyLabel extends Component{
 class App extends Component {
   render() {
     return (
-      <p>Teste</p>
+      <p>Teste Rebeca</p>
     );
   }
 }
