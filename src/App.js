@@ -5,9 +5,7 @@ class Divisor extends Component{
   render(){
     return(
       <div>
-        <h4>Rebeca Andrade</h4>
-        <label>Seu nome?</label>
-        <input type="text"></input>
+        oi
       </div>
     );
   }
