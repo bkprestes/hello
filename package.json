@@ -2,7 +2,7 @@
   "name": "hello",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bkprestes.github.io/hello/",
+  "homepage": "https://bkprestes.github.io/hello/index.html",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
