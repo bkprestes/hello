@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReleaseForm from '../ui/ReleaseForm';
 
 export default class Releases extends Component{
 
@@ -32,35 +33,30 @@ export default class Releases extends Component{
 
     render(){
         return(
-            <table className="table table-hover">
-                <thead>
-                    <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="container" style={{paddingTop: '25px'}}>
+                <ReleaseForm/>
+                <table className="table table-hover">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Release Name</th>
+                        <th scope="col">Release Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.releases.map((release, index) => {
+                            return (<tr key={release.id}>
+                                <th scope="row">{release.id} </th>
+                                <td>{release.releaseName}</td>
+                                <td>{release.releaseDate}</td>
+                                <td><button type="button" className="btn btn-danger btn-sm">Remover</button></td>
+                            </tr>);
+                        })}
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
 
         );
     }
