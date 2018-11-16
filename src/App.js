@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import NavBar from './ui/NavBar';
 
-class Divisor extends Component{
-  render(){
-    return(
-      <div>
-        Estou testando o react 22:41
-      </div>
-    );
-  }
-}
 
 class App extends Component {
   render() {
+    const logo = 'Rebeca Andrade'
     return (
-      <Divisor/>
+      <div className="container">
+        <NavBar logo={logo}/>
+      </div>
     );
   }
 }
