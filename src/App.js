@@ -5,7 +5,7 @@ class Divisor extends Component{
   render(){
     return(
       <div>
-        oi
+        Estou testando o react 22:41
       </div>
     );
   }
